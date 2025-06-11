@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Logs and debug
+*.log
+scraper/chromedriver.log
+*.tmp
+
+# Data & temporary files
+data/parsed_data/
+*.csv
+*.pkl
+*.pt
+*.joblib
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python test/cache
+.cache/
+pytest_cache/
+.ipynb_checkpoints/
+
+# dotenv or config
+config/settings.py
+.env

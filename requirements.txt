@@ -1,0 +1,10 @@
+undetected-chromedriver
+selenium
+pandas
+numpy
+torch
+scikit-learn
+joblib
+matplotlib
+python-telegram-bot
+groq
