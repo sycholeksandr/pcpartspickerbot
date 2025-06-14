@@ -1,12 +1,16 @@
 """Entry point of the Telegram bot."""
-import logging
 from telegram.ext import (
     ApplicationBuilder, CommandHandler, CallbackQueryHandler, MessageHandler, filters
 )
 from config.settings import TELEGRAM_TOKEN
 from bot.handlers import start, start_build, stop_build, handle_message
+import logging
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
+logger = logging.getLogger(__name__)
 
 def main():
     """Start the bot."""

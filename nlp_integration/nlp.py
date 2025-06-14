@@ -41,7 +41,7 @@ async def generate_recommendations(build: dict) -> str:
         f"Video Card: {build['Video Card']}\n"
         f"Power Supply: {build['Power Supply']}\n\n"
         "Дай короткі технічні рекомендації. Формат:\n"
-        "- Кулер: TDP + сокет CPU\n"
+        "- Кулер: TDP + Socket of the Motherboard, usually: AM4, AM5 LGA1700 etc.\n"
         "- Корпус: форм-фактор материнської плати\n"
         "- Вентилятори: скільки потрібно\n"
         "- PSU сертифікація: рекомендована\n\n"

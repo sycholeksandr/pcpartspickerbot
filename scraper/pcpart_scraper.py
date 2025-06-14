@@ -211,7 +211,7 @@ def process_page(page_num, window_index):
     return builds
 
 
-def save_to_csv(all_builds, filename="parsed_builds5.csv"):
+def save_to_csv(all_builds, filename="../data/parsed_data/parsed_builds.csv"):
     """
     Save all scraped builds into a CSV file.
 

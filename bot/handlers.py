@@ -64,7 +64,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     if user_text == "🚀 почати":
         context.user_data["active"] = True
         await update.message.reply_text(
-            "👷 Напиши свій бюджет і тип задач (ігри чи робота)."
+            "👷 Напиши свій бюджет($) і тип задач (ігри чи робота)."
         )
         return
 

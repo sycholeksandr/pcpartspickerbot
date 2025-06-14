@@ -15,7 +15,7 @@ class PCBuildModel(nn.Module):
         """
         super().__init__()
         self.encoders = encoders
-        self.input_size = 3  # price + game_score + work_score
+        self.input_size = 4  # price + game_score + work_score + is high-end
         hidden_size = 128
 
         self.shared = nn.Sequential(
@@ -34,7 +34,7 @@ class PCBuildModel(nn.Module):
             "Motherboard": nn.Linear(hidden_size, len(encoders["Motherboard"].classes_)),
             "Memory": nn.Linear(hidden_size, len(encoders["Memory"].classes_)),
             "Video Card": nn.Linear(hidden_size, len(encoders["Video Card"].classes_)),
-            "Power Supply": nn.Linear(hidden_size, len(encoders["Power Supply"].classes_)),
+            "Power Supply": nn.Linear(hidden_size, len(encoders["Power Supply"].classes_))
         })
 
     def forward(self, inputs):

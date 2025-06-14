@@ -19,6 +19,7 @@ data/parsed_data/
 *.pkl
 *.pt
 *.joblib
+*.png
 
 # VSCode and IDE settings
 .vscode/
@@ -36,3 +37,8 @@ pytest_cache/
 # dotenv or config
 config/settings.py
 .env
+
+# Unnecessary scripts
+analyze_mb.py
+update_data.py
+analyze_gpu.py
